@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieBox Basic Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      color: #032541;
+      margin-top: 0;
+    }
+    .card {
+      background-color: #f0f0f0;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #01b4e4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0092b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MovieBox Basic Test</h1>
+    <p>This is a basic HTML page to test if the server and browser are working correctly.</p>
+    
+    <div class="card">
+      <h2>API Test</h2>
+      <p>Click the button below to test the TMDB API connection:</p>
+      <button id="testApi">Test API</button>
+      <div id="apiResult" style="margin-top: 15px;"></div>
+    </div>
+  </div>
+
+  <script>
+    // Basic JavaScript test
+    document.getElementById('testApi').addEventListener('click', async () => {
+      const apiKey = 'dc7d417f86e83c59958e6812f9cc8c40'; // Your API key
+      const resultElement = document.getElementById('apiResult');
+      
+      try {
+        resultElement.innerHTML = 'Testing API connection...';
+        const response = await fetch(`https://api.themoviedb.org/3/configuration?api_key=${apiKey}`);
+        const data = await response.json();
+        
+        if (data.success === false) {
+          throw new Error(data.status_message || 'API returned an error');
+        }
+        
+        resultElement.innerHTML = `
+          <div style="color: green; font-weight: bold; margin-bottom: 10px;">API Connection Successful!</div>
+          <div style="font-size: 14px;">
+            <strong>Images Base URL:</strong> ${data.images.secure_base_url}<br>
+            <strong>Backdrop Sizes:</strong> ${data.images.backdrop_sizes.join(', ')}
+          </div>
+        `;
+      } catch (error) {
+        resultElement.innerHTML = `
+          <div style="color: red; font-weight: bold;">API Error: ${error.message}</div>
+        `;
+      }
+    });
+  </script>
+</body>
+</html>
