@@ -240,7 +240,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Mandar - [mandar123454@example.com](mailto:mandarkajbaje@gmail.com)
+Owner - Mandar123454
 
 Project Link: [https://github.com/Mandar123454/MovieBox---A-Dynamic-Movie-Discovery-Platform](https://github.com/Mandar123454/MovieBox---A-Dynamic-Movie-Discovery-Platform)
 
