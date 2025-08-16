@@ -36,20 +36,20 @@ A modern, responsive React application that provides users with an immersive mov
 ## Screenshots
 
 ### Homepage with Featured Movie
-![Homepage](https://placehold.co/800x400/e9ecef/00334e?text=MovieBox+Homepage&font=montserrat)
+![Homepage](Screenshots/Homepage%20with%20Featured%20Movie.png)
 
 ### Movie Details Page
-![Movie Details](https://placehold.co/800x400/e9ecef/00334e?text=Movie+Details+Page&font=montserrat)
+![Movie Details](Screenshots/Movie%20Details%20Page.png)
 
 ### Search Results
-![Search Results](https://placehold.co/800x400/e9ecef/00334e?text=Search+Results&font=montserrat)
+![Search Results](Screenshots/Search%20Results.png)
 
 ## Installation
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/moviebox.git
-   cd moviebox
+   git clone https://github.com/Mandar123454/MovieBox---A-Dynamic-Movie-Discovery-Platform.git
+   cd MovieBox---A-Dynamic-Movie-Discovery-Platform
    ```
 
 2. Install dependencies
@@ -240,9 +240,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Mandar - [mandar123454@example.com](mailto:mandar123454@example.com)
 
-Project Link: [https://github.com/your-username/moviebox](https://github.com/your-username/moviebox)
+Project Link: [https://github.com/Mandar123454/MovieBox---A-Dynamic-Movie-Discovery-Platform](https://github.com/Mandar123454/MovieBox---A-Dynamic-Movie-Discovery-Platform)
 
 ### Troubleshooting API Key Issues
 
@@ -265,4 +265,4 @@ This project is open source and available under the MIT License.
 ## Acknowledgements
 
 - Data provided by [The Movie Database (TMDb) API](https://www.themoviedb.org/)
-- This product uses the TMDb API but is not endorsed or certified by TMDb.
+- Proudly powered by the TMDb API - delivering high-quality movie data.
